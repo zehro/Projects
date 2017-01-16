@@ -1,0 +1,160 @@
+
+<!-- saved from url=(0056)http://www.prism.gatech.edu/~ahuynh6/tut/fdTutorial.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		BODY
+		{
+			font-family: sans-serif;
+		}
+		div.content
+		{
+			width: 960px;
+			margin: 0 auto;
+		}
+		div.mono
+		{
+			font-family: monospace;
+		}
+		div.mid
+		{
+			text-align: center;
+		}
+		div.alert
+		{
+			color: red;
+		}
+		div.foot
+		{
+			color: #BBBBBB;
+		}
+		img
+		{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="content">
+	<h1>Setting up FlashDevelop</h1>
+	
+	FlashDevelop is a standalone IDE for working with <a href="http://en.wikipedia.org/wiki/ActionScript">ActionScript 3</a>.<br>
+	AS3 is used to make things like Flash games; you may remember playing these games in high school!<p>
+	Unlike <a href="http://en.wikipedia.org/wiki/Adobe_Flash_Professional%22">Adobe Flash</a> itself, FlashDevelop is free! Let's set it up!</p><p>
+
+	</p><div class="alert">
+		NOTICE: If you are not running Windows, you will have to use Windows virtualization software or some other method to get FlashDevelop running. See the <a href="http://www.flashdevelop.org/wikidocs/index.php?title=F.A.Q#What_operating_system.28s.29_does_FD_run_on.3F">FAQ</a> page for help.<p>
+	</p></div>
+	
+	
+	<h2>1. Download FlashDevelop</h2>
+	
+	Go ahead and grab <a href="http://www.flashdevelop.org/">FlashDevelop</a>. <p>
+
+	<img src="./fdTutorial_files/fd01.png">
+	</p><div class="mid">
+		<i>FlashDevelop's webpage.</i>
+	</div>
+	<br>
+	
+	After starting the installer, you might encounter this message.<p>
+	<img src="./fdTutorial_files/fd02.png">
+	<br>
+	If you don't have Java, we can grab it easily.<br>
+	If you do have it, hurray! Skip to step 3.
+	
+	</p><h2>2. Download Java, if needed</h2>
+	
+	Head over to <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle's webpage</a> and grab a copy of the Java Development Kit, or JDK.<p>
+	
+	<img src="./fdTutorial_files/fd03.png">
+	</p><div class="mid">
+		<i>FlashDevelop's webpage.</i>
+	</div>
+	<p>
+	
+	This is the right choice if you're running a 64-bit version of Windows. </p><p>
+	
+	<img src="./fdTutorial_files/fd04.png">
+	</p><div class="mid">
+		<i>I never liked how cluttered these download pages are.</i>
+	</div>
+
+	<h2>3. Finish installing FlashDevelop</h2>
+	
+	When you're done installing, go ahead and open FlashDevelop. It's easiest if you just click on the FlashDevelop project file, in your local repository's files. <p>
+	
+	<img src="./fdTutorial_files/fd05.png">
+	</p><div class="mid">
+		<i>If you've installed FD, you should see its icon next to the project file instead of the blank generic icon.</i>
+	</div>
+	<p>
+	
+	Upon startup, you should see a software installation wizard.<br>
+	Check <i>Flex SDK</i> and <i>Flash Player (SA)</i>.</p><p>
+	
+	We need the SDK to compile things, and Flash Player to run our outputted .swf files!</p><p>
+	
+	<img src="./fdTutorial_files/fd06.png">
+	</p><div class="mid">
+		<i>Getting dependencies.</i>
+	</div>
+	<p>
+	
+	Be sure to remember the install path! We'll need it later.</p><p>
+	
+	<img src="./fdTutorial_files/fd06b.png">
+	</p><p>
+	
+	One last step. We need to tell FD where the SDK is.</p><p>
+	With Package Panic's project open, navigate to:<br>
+	Project -&gt; Properties...</p><p>
+	
+	<img src="./fdTutorial_files/fd07.png">
+	</p><p>
+	
+	Select the <i>SDK</i> tab, and choose <i>Manage...</i> under <i>Installed SDK(s)</i>.</p><p>
+	
+	<img src="./fdTutorial_files/fd08.png">
+	</p><p>
+	
+	Under <i>AS3Context</i>, click on the <i>...</i> next to <i>Installed Flex SDKs</i>, then choose <i>Add</i> and the <i>...</i> under <i>Path</i>.</p><p>
+	
+	<img src="./fdTutorial_files/fd09.png">
+	</p><p>
+	
+	Navigate to the install path for the Flex SDK (that you should have remembered from above) and pick it.</p><p>
+	Mine was found at:<br>
+	</p><div class="mono">
+	C:\Users\Alex\AppData\Local\FlashDevelop\Apps\flexsdk<p>
+	</p></div>
+
+	<h2>4. Test it!</h2>
+	
+	Finally. Now just hit that little "Play" button near the top, and see if it works!<p>
+	
+	<img src="./fdTutorial_files/fd10.png">
+	</p><div class="mid">
+		<i>We're good to go.</i>
+	</div>
+	<p>
+	
+	</p><hr>
+	
+	<div class="foot">
+	Alexander Huynh<br>
+	Georgia Institute of Technology<br>
+	Video Game Development Club<br>
+	January 20, 2015
+	</div>
+	
+	</div><table>
+	
+</table>
+	
+
+
+</body></html>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project version="2">
+  <!-- Output SWF options -->
+  <output>
+    <movie outputType="Application" />
+    <movie input="" />
+    <movie path="bin\stroll-slipspace.swf" />
+    <movie fps="30" />
+    <movie width="800" />
+    <movie height="600" />
+    <movie version="11" />
+    <movie minorVersion="4" />
+    <movie platform="Flash Player" />
+    <movie background="#FFFFFF" />
+  </output>
+  <!-- Other classes to be compiled into your SWF -->
+  <classpaths>
+    <class path="src" />
+  </classpaths>
+  <!-- Build options -->
+  <build>
+    <option accessible="False" />
+    <option advancedTelemetry="False" />
+    <option allowSourcePathOverlap="False" />
+    <option benchmark="False" />
+    <option es="False" />
+    <option inline="False" />
+    <option locale="" />
+    <option loadConfig="" />
+    <option optimize="True" />
+    <option omitTraces="True" />
+    <option showActionScriptWarnings="True" />
+    <option showBindingWarnings="True" />
+    <option showInvalidCSS="True" />
+    <option showDeprecationWarnings="True" />
+    <option showUnusedTypeSelectorWarnings="True" />
+    <option strict="True" />
+    <option useNetwork="True" />
+    <option useResourceBundleMetadata="True" />
+    <option warnings="True" />
+    <option verboseStackTraces="False" />
+    <option linkReport="" />
+    <option loadExterns="" />
+    <option staticLinkRSL="True" />
+    <option additional="" />
+    <option compilerConstants="" />
+    <option minorVersion="" />
+  </build>
+  <!-- SWC Include Libraries -->
+  <includeLibraries>
+    <!-- example: <element path="..." /> -->
+  </includeLibraries>
+  <!-- SWC Libraries -->
+  <libraryPaths>
+    <element path="swc\SWC_Game.swc" />
+    <element path="swc\SWC_MainMenu.swc" />
+    <element path="swc\SWC_Bullet.swc" />
+    <element path="swc\SWC_Enemy.swc" />
+    <element path="swc\SWC_GUI.swc" />
+    <element path="swc\SWC_SlipdriveArrow.swc" />
+    <element path="swc\SWC_Decor.swc" />
+    <element path="swc\SWC_Debug.swc" />
+    <element path="swc\SWC_Mask.swc" />
+    <element path="swc\SWC_ShieldObj.swc" />
+    <element path="swc\SWC_HitRectangle.swc" />
+  </libraryPaths>
+  <!-- External Libraries -->
+  <externalLibraryPaths>
+    <!-- example: <element path="..." /> -->
+  </externalLibraryPaths>
+  <!-- Runtime Shared Libraries -->
+  <rslPaths>
+    <!-- example: <element path="..." /> -->
+  </rslPaths>
+  <!-- Intrinsic Libraries -->
+  <intrinsics>
+    <!-- example: <element path="..." /> -->
+  </intrinsics>
+  <!-- Assets to embed into the output SWF -->
+  <library>
+    <asset path="sfx\sfx_laser1.mp3" />
+    <asset path="sfx\sfx_hithull1.mp3" />
+    <asset path="sfx\sfx_hitshield1.mp3" />
+    <asset path="sfx\sfx_explosionlarge1.mp3" />
+    <asset path="bgm\bgm_battle1.mp3" />
+    <asset path="sfx\sfx_bell.mp3" />
+    <asset path="sfx\sfx_shieldrecharge.mp3" />
+    <asset path="sfx\sfx_sliphit.mp3" />
+    <asset path="sfx\sfx_slipjump.mp3" />
+    <asset path="bgm\bgm_calm.mp3" />
+    <asset path="sfx\sfx_readybeep2G.mp3" />
+    <asset path="sfx\sfx_readybeep1B.mp3" />
+    <asset path="sfx\sfx_readybeep3E.mp3" />
+    <asset path="sfx\sfx_UI_Beep_B.mp3" />
+    <asset path="sfx\sfx_UI_Beep_C.mp3" />
+    <asset path="sfx\sfx_UI_Beep_Cs.mp3" />
+    <asset path="bgm\bgm_boss.mp3" />
+    <asset path="sfx\sfx_electricShock.mp3" />
+    <asset path="sfx\sfx_peeps_yell.mp3" />
+    <asset path="sfx\sfx_peeps_phase_change.mp3" />
+    <asset path="sfx\sfx_warn2.mp3" />
+    <asset path="sfx\sfx_warn2vitals.mp3" />
+    <asset path="sfx\sfx_ekg.mp3" />
+    <asset path="sfx\sfx_servo.mp3" />
+    <asset path="sfx\sfx_servoEnd.mp3" />
+    <asset path="bgm\bgm_FAILS.mp3" />
+    <asset path="bgm\bgm_title.mp3" />
+    <asset path="sfx\sfx_explosion1.mp3" />
+    <asset path="sfx\sfx_explosion2.mp3" />
+    <asset path="sfx\sfx_fire_ignited.mp3" />
+    <asset path="sfx\sfx_monsterdeath_1.mp3" />
+    <asset path="sfx\sfx_monsterdeath_2.mp3" />
+    <asset path="sfx\sfx_monsterdeath_3.mp3" />
+    <asset path="sfx\sfx_monsterdeath_4.mp3" />
+    <asset path="sfx\sfx_monsterdeath_5.mp3" />
+    <asset path="sfx\sfx_monsterdeath_6.mp3" />
+    <asset path="sfx\sfx_monsterdeath_7.mp3" />
+    <asset path="bgm\bgm_1a_here_we_go.mp3" />
+    <asset path="bgm\bgm_1a2_hey_somethings_wrong.mp3" />
+    <asset path="bgm\bgm_1bc_oh_snap.mp3" />
+    <asset path="bgm\bgm_2a_I_spoke_too_soon.mp3" />
+    <asset path="bgm\bgm_2b_your_new_captain_speaking.mp3" />
+    <asset path="bgm\bgm_notsocalm.mp3" />
+    <asset path="bgm\bgm_the_final_holdout.mp3" />
+    <asset path="bgm\bgm_1d_nobody_can_save_us.mp3" />
+    <asset path="bgm\bgm_victory.mp3" />
+    <asset path="sfx\sfx_hitshield2.mp3" />
+    <asset path="sfx\sfx_hitshield3.mp3" />
+    <asset path="sfx\sfx_shielddown.mp3" />
+    <asset path="sfx\sfx_healingloop.mp3" />
+    <asset path="sfx\sfx_pdw.mp3" />
+    <asset path="sfx\sfx_laser2.mp3" />
+    <asset path="sfx\sfx_laser3.mp3" />
+  </library>
+  <!-- Class files to compile (other referenced classes will automatically be included) -->
+  <compileTargets>
+    <compile path="src\vgdev\stroll\Main.as" />
+  </compileTargets>
+  <!-- Paths to exclude from the Project Explorer tree -->
+  <hiddenPaths>
+    <hidden path="obj" />
+  </hiddenPaths>
+  <!-- Executed before build -->
+  <preBuildCommand />
+  <!-- Executed after build -->
+  <postBuildCommand alwaysRun="False" />
+  <!-- Other project options -->
+  <options>
+    <option showHiddenPaths="False" />
+    <option testMovie="Default" />
+    <option testMovieCommand="" />
+  </options>
+  <!-- Plugin storage -->
+  <storage />
+</project>

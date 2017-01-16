@@ -1,0 +1,72 @@
+{
+  "settings": {
+	"id": "skulls",
+	"background": "default",
+	"difficulty_range": [5, 7],
+    "jamming_min": 3,
+    "slip_range": 55.0,
+	"type": "Enemies",
+	"TAILS": "Something hot detected... other than me, unfortunately!"
+  },
+  "waves": [
+	{
+		"time": 4,
+		"repeat": 4,
+		"spawnables":
+			[
+				{"type": "Skull"}
+			]
+	},
+	{
+		"time": 9,
+		"TAILS": "Careful! Those can start fires even if shields are up!",
+		"spawnables":
+			[
+			]
+	},
+	{
+		"time": 7,
+		"TAILS": "Whoa! They're bringing friends, too!",
+		"spawnables":
+			[
+			]
+	},
+	{
+		"time": 0.1,
+		"repeat": 2,
+		"spawnables":
+			[
+				{"type": "Skull"},
+				{"type": "Eye", "region": "right"}
+			]
+	},
+	{
+		"time": 2,
+		"spawnables":
+			[
+				{"type": "Skull"},
+				{"type": "Eye", "region": "top"},
+				{"type": "Eye", "region": "top"}
+			]
+	},
+	{
+		"time": 16,
+		"TAILS": "Things are heating up; another wave detected!",
+		"spawnables":
+			[
+			]
+	},
+	{
+		"time": 7,
+		"spawnables":
+			[
+				{"type": "Skull"},
+				{"type": "Skull"},
+				{"type": "Skull"},
+				{"type": "Eye", "region": "top"},
+				{"type": "Eye", "region": "bottom"},
+				{"type": "Eye", "region": "left"}
+			]
+	}
+  ]
+}

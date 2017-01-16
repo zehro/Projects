@@ -1,0 +1,72 @@
+{
+  "settings": {
+	"id": "mantas",
+	"background": "default",
+	"difficulty_range": [5, 7],
+    "jamming_min": 3,
+    "slip_range": 54.0,
+	"type": "Enemies",
+	"TAILS": "Long-range enemies detected. Man the sensors!"
+  },
+  "waves": [
+	{
+		"time": 4.5,
+		"repeat": 2,
+		"spawnables":
+			[
+				{"type": "Manta"}
+			]
+	},
+	{
+		"time": 13,
+		"TAILS": "Watch out! That BLUE ice hurts pretty bad!",
+		"spawnables":
+			[
+			]
+	},
+	{
+		"time": 18,
+		"TAILS": "Look out; I think they have friends, too!",
+		"spawnables":
+			[
+			]
+	},
+	{
+		"time": 4,
+		"spawnables":
+			[
+				{"type": "Slime"},
+				{"type": "Slime"},
+				{"type": "Slime"},
+				{"type": "Manta"},
+				{"type": "Manta"}
+			]
+	},
+	{
+		"time": 21,
+		"TAILS": "Another wave inbound; can we just jump away?",
+		"spawnables":
+			[
+			]
+	},
+	{
+		"time": 5,
+		"spawnables":
+			[
+				{"type": "Slime"},
+				{"type": "Slime"},
+				{"type": "Slime"},
+				{"type": "Manta"}
+			]
+	},
+	{
+		"time": 38,
+		"repeat": 2,
+		"recur": 33,
+		"spawnables":
+			[
+				{"type": "Slime"}
+			]
+	}
+  ]
+}

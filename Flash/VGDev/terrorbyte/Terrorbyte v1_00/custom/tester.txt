@@ -1,0 +1,75 @@
+// Level designer testing file
+
+// please place turrets before making edges
+//use two forward slashes to make a comment; new lines are also ignored
+
+// (0 0) is the origin, located at the center of the screen
+// -x is left, +x is right
+// -y is up, +y is down
+
+// places the starting "home" node - use only ONE for now and set its id to "home", w/o quotation marks
+// SATELLITE x y id Tb
+SATELLITE -250 -200 home 1
+
+// places a turret
+// TURRET type x y id Tb resistance tier startingRotation ...
+// type can be "turretNorm", w/o quotation marks
+// set optional attributes with attribute:amount
+// higher tier means higher hack and stun time only
+TURRET turretNorm -190 0 turret 2 1 1 45
+TURRET turretNorm 0 0 turretHyper 1 1 2 0 rof:5 range:250 rotSpdTrack:24 angleFire:45 rotDir:-1
+
+// attribute	default	description
+// rof		90	Frames it takes to reload (90 = 1.5 sec). Lower to increase rof (60 = 1.0 sec).
+// range	100	Radius of fire range in pixels.
+// angleFire	10	Firing cone. Increase to fire sooner but with less accuracy.
+// rotSpdIdle	.3	Degrees to rotate per frame when idle.
+// rotSpdTrack	7.5	Degrees to rotate per frame when tracking target.
+// rotDir	1	Direction to rotate. 1 = CW, -1 = CCW.
+
+// places a server
+// SERVER serverNorm x y id Tb resistance tier
+SERVER serverNorm 250 170 server 2 1 1
+
+// connects nodes together
+// EDGE id1 id2
+EDGE home turret
+EDGE turretHyper turret
+EDGE turretHyper server
+
+// places a plane
+// PLANE type x y startingRotation (x1 y1) (x2 y2) ...
+// coordinates are waypoints for the plane to follow
+// plane is considered safe once it clears the second to last coordinate pair
+// ensure to place waypoints in a smooth path so that planes can hit them
+// set final coordinate pair far away so the plane flies off of the map
+// type can be "passenger", "fighter", or "swept", w/o quotation marks
+PLANE passenger -290 190 -45 (-200 100) (-100 0) (60 -100) (500 -500)
+
+// WARNING - only the passenger plane's movement stats are finalized!
+
+// draws the safezone
+// SAFEZONE (x1 y1) (x2 y2) (x3 y3) ...
+SAFEZONE (400 -300) (-405 300) (-65 -240) (65 -110) (400 -110)
+
+// places the safezone label
+// SAFETITLE x y
+SAFETITLE (200 -200)
+
+// draws terrain lines
+// TERRAIN (x1 y1) (x2 y2) ...
+TERRAIN (-400 15) (0 50) (150 76) (400 90)
+TERRAIN (-400 115) (0 150) (150 176) (400 190)
+
+// places decor
+// TREE1 x y
+// TREE3 x y
+// MOUNTAIN1 x y
+// MOUNTAIN3 x y
+MOUNTAIN3 (-348 -209)
+MOUNTAIN3 (-324 -267)
+MOUNTAIN3 (-233 -267)
+MOUNTAIN3 (-107 238)
+MOUNTAIN3 (-186 235)
+
+// END OF FILE DO NOT CHANGE

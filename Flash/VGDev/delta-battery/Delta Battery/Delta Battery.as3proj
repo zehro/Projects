@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project version="2">
+  <!-- Output SWF options -->
+  <output>
+    <movie outputType="Application" />
+    <movie input="" />
+    <movie path="bin\DeltaBattery.swf" />
+    <movie fps="30" />
+    <movie width="800" />
+    <movie height="600" />
+    <movie version="11" />
+    <movie minorVersion="2" />
+    <movie platform="Flash Player" />
+    <movie background="#FFFFFF" />
+  </output>
+  <!-- Other classes to be compiled into your SWF -->
+  <classpaths>
+    <class path="src" />
+  </classpaths>
+  <!-- Build options -->
+  <build>
+    <option accessible="False" />
+    <option advancedTelemetry="False" />
+    <option allowSourcePathOverlap="False" />
+    <option benchmark="False" />
+    <option es="False" />
+    <option inline="False" />
+    <option locale="" />
+    <option loadConfig="" />
+    <option optimize="True" />
+    <option omitTraces="True" />
+    <option showActionScriptWarnings="True" />
+    <option showBindingWarnings="True" />
+    <option showInvalidCSS="True" />
+    <option showDeprecationWarnings="True" />
+    <option showUnusedTypeSelectorWarnings="True" />
+    <option strict="True" />
+    <option useNetwork="True" />
+    <option useResourceBundleMetadata="True" />
+    <option warnings="True" />
+    <option verboseStackTraces="False" />
+    <option linkReport="" />
+    <option loadExterns="" />
+    <option staticLinkRSL="True" />
+    <option additional="" />
+    <option compilerConstants="" />
+    <option minorVersion="" />
+  </build>
+  <!-- SWC Include Libraries -->
+  <includeLibraries>
+    <element path="SomeTest" />
+  </includeLibraries>
+  <!-- SWC Libraries -->
+  <libraryPaths>
+    <element path="BulletStandard.swc" />
+    <element path="ArtilleryStandard.swc" />
+    <element path="Selected.swc" />
+    <element path="MissileBig.swc" />
+    <element path="Helicopter.swc" />
+    <element path="Bomber.swc" />
+    <element path="MissileFast.swc" />
+    <element path="MissileRocket.swc" />
+    <element path="ShipPassenger.swc" />
+    <element path="Satellite.swc" />
+    <element path="Airplane.swc" />
+    <element path="ShipBattle.swc" />
+    <element path="ArtilleryBomb.swc" />
+    <element path="SpecialWarning.swc" />
+    <element path="ExplosionStandard.swc" />
+    <element path="ParticleArtillery.swc" />
+    <element path="ParticleSmoke01.swc" />
+    <element path="MissileStandard.swc" />
+    <element path="MissileLASM.swc" />
+    <element path="MissileTarget.swc" />
+    <element path="MissilePop.swc" />
+    <element path="MoneyPopup.swc" />
+    <element path="MissileCruise.swc" />
+    <element path="ContainerMenu.swc" />
+    <element path="ParticleShell.swc" />
+    <element path="ParticleDebris.swc" />
+    <element path="GameCursor.swc" />
+    <element path="Game.swc" />
+  </libraryPaths>
+  <!-- External Libraries -->
+  <externalLibraryPaths>
+    <!-- example: <element path="..." /> -->
+  </externalLibraryPaths>
+  <!-- Runtime Shared Libraries -->
+  <rslPaths>
+    <!-- example: <element path="..." /> -->
+  </rslPaths>
+  <!-- Intrinsic Libraries -->
+  <intrinsics>
+    <element path="Library\AS3\frameworks\Flex3" />
+  </intrinsics>
+  <!-- Assets to embed into the output SWF -->
+  <library>
+    <asset path="src\sounds\SFX_missileNormFire.wav" update="..\Flash\SFX_missileNormFire.wav" />
+    <asset path="src\sounds\SFX_explodeNorm.wav" update="..\Flash\SFX_explodeNorm.wav" />
+    <asset path="src\sounds\SFX_chaingunNorm.wav" update="..\Flash\SFX_chaingunNorm.wav" />
+    <asset path="src\sound\db_bgm_1.mp3" update="..\Sound\db_bgm_1.mp3" />
+    <asset path="src\sound\db_bgm_2.mp3" update="..\Sound\db_bgm_2.mp3" />
+    <asset path="src\sound\db_explode_0.mp3" update="..\Sound\db_explode_0.mp3" />
+    <asset path="src\sound\db_explode_1.mp3" update="..\Sound\db_explode_1.mp3" />
+    <asset path="src\sound\db_explode_2.mp3" update="..\Sound\db_explode_2.mp3" />
+    <asset path="src\sound\db_launch_chain.mp3" update="..\Sound\db_launch_chain.mp3" />
+    <asset path="src\sound\db_launch_standard.mp3" update="..\Sound\db_launch_standard.mp3" />
+    <asset path="src\sound\db_launch_fast.mp3" update="..\Sound\db_launch_fast.mp3" />
+    <asset path="src\sound\db_explode_3.mp3" update="..\Sound\db_explode_3.mp3" />
+    <asset path="src\sound\db_launch_os_standard.mp3" update="..\Sound\db_launch_os_standard.mp3" />
+    <asset path="src\sound\db_launch_big.mp3" update="..\Sound\db_launch_big.mp3" />
+    <asset path="src\sound\db_menu_blip.mp3" update="..\Sound\db_menu_blip.mp3" />
+    <asset path="src\sound\db_menu_blip_over.mp3" update="..\Sound\db_menu_blip_over.mp3" />
+    <asset path="src\sound\db_no_ammo.mp3" update="..\Sound\db_no_ammo.mp3" />
+    <asset path="src\sound\db_purchase.mp3" update="..\Sound\db_purchase.mp3" />
+    <asset path="src\sound\db_launch_laser.mp3" update="..\Sound\db_launch_laser.mp3" />
+  </library>
+  <!-- Class files to compile (other referenced classes will automatically be included) -->
+  <compileTargets>
+    <compile path="src\deltabattery\Main.as" />
+  </compileTargets>
+  <!-- Paths to exclude from the Project Explorer tree -->
+  <hiddenPaths>
+    <hidden path="obj" />
+  </hiddenPaths>
+  <!-- Executed before build -->
+  <preBuildCommand />
+  <!-- Executed after build -->
+  <postBuildCommand alwaysRun="False" />
+  <!-- Other project options -->
+  <options>
+    <option showHiddenPaths="False" />
+    <option testMovie="Default" />
+    <option testMovieCommand="" />
+  </options>
+  <!-- Plugin storage -->
+  <storage />
+</project>
