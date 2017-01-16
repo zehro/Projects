@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="340.0" prefHeight="340.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <Pane prefHeight="200.0" prefWidth="200.0">
+           <children>
+              <TextField layoutX="80.0" layoutY="224.0" styleClass="stepNameField" />
+              <Label layoutX="14.0" layoutY="228.0" text="Step Name" />
+              <Label layoutX="14.0" layoutY="252.0" text="Step Text" />
+              <TextArea layoutX="80.0" layoutY="252.0" prefHeight="79.0" prefWidth="490.0" styleClass="stepDescriptionField" />
+              <TableView layoutX="29.0" layoutY="14.0" prefHeight="167.0" prefWidth="322.0" styleClass="actionTable">
+                 <columns>
+                    <TableColumn prefWidth="165.0" text="Status Types" />
+                  <TableColumn prefWidth="156.0" text="Description" />
+                 </columns>
+              </TableView>
+           </children>
+        </Pane>
+        <Button layoutX="61.0" layoutY="188.0" mnemonicParsing="false" styleClass="newActionButton" text="New Status" />
+        <Button layoutX="200.0" layoutY="188.0" mnemonicParsing="false" styleClass="removeActionButton" text="Remove Status" />
+      <ListView layoutX="374.0" layoutY="14.0" prefHeight="167.0" prefWidth="200.0" styleClass="commandList" />
+      <Button layoutX="361.0" layoutY="188.0" mnemonicParsing="false" styleClass="addCommand" text="Add Command" />
+      <Button layoutX="468.0" layoutY="188.0" mnemonicParsing="false" styleClass="removeCommand" text="Remove Command" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<GameSettings name="Test">
+ 	<Type>Stock</Type>
+ 	<TimeLimitEnabled>true</TimeLimitEnabled>
+	<TimeLimit>5</TimeLimit>
+	<KillLimit>Infinity</KillLimit>
+	<StockLimit>5</StockLimit>
+    <ArrowLimit>Infinity</ArrowLimit>
+	<DamageModifier>1.0</DamageModifier>
+    <GravityModifier>1.0</GravityModifier>
+    <SpeedModifier>1.0</SpeedModifier>
+    <TokenSpawnFreq>5.0</TokenSpawnFreq>
+    <PlayerSpawnFreq>3.0</PlayerSpawnFreq>
+	<EnabledTokens>
+		<DictionaryItem>
+            <Token>Fireball</Token>
+            <Frequency>Abundant</Frequency>
+        </DictionaryItem>
+        <DictionaryItem>
+            <Token>Ghost</Token>
+            <Frequency>Abundant</Frequency>
+        </DictionaryItem>
+        <DictionaryItem>
+            <Token>Ricochet</Token>
+            <Frequency>Abundant</Frequency>
+        </DictionaryItem>
+    </EnabledTokens>
+    <DefaultTokens>
+    </DefaultTokens>
+</GameSettings>

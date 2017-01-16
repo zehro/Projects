@@ -1,0 +1,255 @@
+option java_package = "stsquestbuilder.protocolbuffers";
+
+//Standard Object Definitions
+//This section holds protobufs for objects which could be statically built
+enum ActionType {
+	KILL = 0;
+	MOVE_AREA = 1;
+	APPROACHED_OBJECT = 2;
+	PICKED_UP_OBJECT = 3;
+	LEVEL_UP = 5;
+	EQUIP_ITEM = 6;
+	USE_ITEM = 7;
+	ATTACK = 8;
+	CONVERSATION_NODE_HIT = 9;
+}
+
+enum Biome {
+	NOT_ASSIGNED = 0;
+	PYTHON = 1;
+	C = 2;
+	HTML = 3;
+}
+
+enum MapType {
+	CITY = 0;
+	PATH = 1;
+	DUNGEON = 2;
+}
+
+enum SpawnAreaTypeSpecification {
+	LOCAL = 0;
+	DISTANCE = 1;
+}
+
+enum LevelSpecification {
+	MINIMUM = 1;
+	EXACT = 2;
+}
+
+//quests
+
+message QuestPackage {
+    repeated QuestProtocol quests = 1;
+}
+
+message BuilderPackage {
+    repeated DirectObjectProtocol enemies = 1;
+	repeated DirectObjectProtocol weapons = 2;
+	repeated DirectObjectProtocol hacks = 3;
+}
+
+message QuestProtocol {
+    required string name = 1;
+	optional string creator = 3;
+	repeated StatusStepProtocol steps = 2;
+	optional Biome biome = 4;
+}
+
+message StatusBlockProtocol {
+	required string name = 1;
+	repeated StatusCheckableProtocol statuses = 2;
+	repeated SpawnCommandProtocol commands = 3;
+}
+
+message SpawnCommandProtocol {
+	required MapType spawnArea = 1;//changed after deployment, but possible that users haven't used this yet, may need to be reverted to string
+	required SpawnAreaTypeSpecification spawnSpecification = 2;//deprecated
+	required int32 range = 3;
+	//optional DirectObjectProtocol area = 4;
+	optional DirectObjectProtocol item = 5;
+	optional DirectObjectProtocol enemy = 6;
+}
+
+message StatusStepProtocol {
+    required string name = 1;
+	required string description = 2;
+    repeated StatusCheckableProtocol statusesInStep = 3;
+	repeated SpawnCommandProtocol commands = 4;
+}
+
+message StatusCheckableProtocol {
+	optional ActionProtocol action = 1;
+	optional TierProtocol tier = 2;
+	optional int32 amount = 3;
+	optional LevelProtocol level = 4;
+	optional bool not = 5;
+	optional QuestFinishedProtocol quest = 6;
+	optional NumAreasProtocol numAreas = 7;
+}
+
+message TierProtocol {
+	required int32 tier = 1;
+}
+
+message LevelProtocol {
+	required int32 level = 1;
+}
+
+message QuestFinishedProtocol {
+	required string name = 1;
+}
+
+message NumAreasProtocol {
+	required int32 numAreas = 1;
+}
+
+message ActionProtocol {
+	required ActionType type = 1;
+	optional DirectObjectProtocol target = 2;
+}
+
+message DirectObjectProtocol {
+	optional string type = 1;
+	required string name = 2;
+	optional MapProtocol map = 3;//not sure what this is for, may need to delete/ generally need to investigate
+	optional int32 amount = 4;
+	optional ItemProtocol itemInformation = 5;
+}
+
+message MapProtocol {
+	required int64 uid = 1;
+	required bool generateIfNeeded = 2;
+	required double range = 3;
+}
+
+message ItemProtocol {
+	required int32 version = 1;
+	required LevelSpecification levelSpec = 2;
+	optional string saveVersion = 3;
+}
+
+//conversations
+
+message ConversationPackage {
+    repeated Conversation conversations = 1;
+}
+
+message Conversation {
+	repeated ConversationNode allNodes = 1;
+	optional string name = 2;
+	optional string creator = 3;
+}
+
+message ConversationNode {
+    required string text = 1;
+	required string name = 2;
+	required int64 uid = 3;
+	required int32 X = 4;
+	required int32 Y = 5;
+    repeated Connection connections = 6;
+	repeated StatusBlockProtocol blocks = 7;
+}
+
+message Connection {
+    required int64 nodeId = 1;
+    required string text = 2;
+	repeated RequirementSet requirementSets = 3;
+	optional int32 priority = 4;
+}
+
+message RequirementSet {
+	repeated StatusCheckableProtocol requirements = 1;
+}
+
+//Data Storage definitions
+//This section holds protobufs for object which hold gamedata for game persistence
+
+message SavePackage {
+	required PlayerStatus player = 1; 
+	required int32 seed = 2;
+	repeated QuestSave questData = 3;
+	repeated SpawnedObject spawnedObjects = 4;
+	repeated ConversationSave conversationData = 5;
+}
+
+message GlobalPosition {
+	required int32 areaX = 2;
+	required int32 areaY = 3;
+	required int32 localX = 4;
+	required int32 localY = 5;
+}
+
+message PointProto {
+	required int32 x = 1;
+	required int32 y = 2;
+}
+
+message QuestSave {
+	required string name = 1;
+	required int32 step = 2;
+	repeated PointProto currentStepSpawnLocations = 3;
+	repeated StatusSave currentStepData = 4;
+}
+
+message ConversationSave {
+	required string name = 1;
+	repeated ConversationNodeSave nodes = 2;
+}
+
+message ConversationNodeSave {
+	required int64 uid = 1;
+	repeated StatusBlockSave blocks = 2;//relies on order...
+	repeated AlternativeSave alts = 3;
+}
+
+message AlternativeSave {
+	required int64 uid = 1;
+	repeated StatusBlockSave stats = 2;
+}
+
+message StatusBlockSave {
+	repeated StatusSave stats = 1;
+}
+
+message StatusSave {
+	required bool alreadyMet = 1;
+	required int32 count = 2;
+}
+
+message SpawnedObject {
+	required GlobalPosition objectPosition = 1;
+	required DirectObjectProtocol objectData = 2;
+	optional EnemyData enemyAttributes = 3;//only stores health for now, but we may want to store effects too
+	optional string description = 4;//used for the quest stars
+}
+
+message EnemyData {
+	required int32 healthRemaining = 1;
+}
+
+message PlayerStatus {
+	required GlobalPosition playerPosition = 1;
+	required InventoryData inventory = 2;
+	required string version = 3;
+	required int32 rotation = 4;
+	required string name = 5;
+	repeated PointProto visitedAreas = 6;
+	optional int32 strength = 7;
+	optional int32 defence = 8;
+	optional int32 efficiency = 9;
+	optional int32 encryption = 10;
+	optional int32 security = 11;
+	optional int32 algorithmPoints = 12;
+	optional int32 deaths = 13;
+	optional float integrity = 14;
+	optional float rma = 15;
+	optional int32 xpBytes = 16;
+	optional int32 bytes = 17;
+	optional int32 bytesRemaining = 18;
+}
+
+message InventoryData {
+	repeated DirectObjectProtocol object = 1;
+}
+
