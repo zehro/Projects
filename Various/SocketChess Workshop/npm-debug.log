@@ -1,0 +1,37 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\nodejs\\node.exe',
+1 verbose cli   'D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'watch' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.1
+4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+5 info lifecycle chess_workshop@1.0.0~prewatch: chess_workshop@1.0.0
+6 silly lifecycle chess_workshop@1.0.0~prewatch: no script for prewatch, continuing
+7 info lifecycle chess_workshop@1.0.0~watch: chess_workshop@1.0.0
+8 verbose lifecycle chess_workshop@1.0.0~watch: unsafe-perm in lifecycle true
+9 verbose lifecycle chess_workshop@1.0.0~watch: PATH: D:\nodejs\node_modules\npm\bin\node-gyp-bin;D:\Users\James\Desktop\workshop\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Skype\Phone\;D:\Anaconda2.7;D:\Anaconda2.7\Scripts;D:\Anaconda2.7\Library\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;D:\MiKTeX\miktex\bin\x64\;D:\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\James\AppData\Local\atom\bin;D:\Gradle\bin;D:\Java\jdk1.8.0_121\bin;D:\nodejs;C:\Users\James\AppData\Roaming\npm
+10 verbose lifecycle chess_workshop@1.0.0~watch: CWD: D:\Users\James\Desktop\workshop
+11 silly lifecycle chess_workshop@1.0.0~watch: Args: [ '/d /s /c',
+11 silly lifecycle   'watchify ./frontend/index.js -o ./public/index.js' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1018:11)
+12 verbose stack     at process.kill (internal/process.js:190:13)
+12 verbose stack     at process.listener (D:\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (D:\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
+13 verbose cwd D:\Users\James\Desktop\workshop
+14 error Windows_NT 6.3.9600
+15 error argv "D:\\nodejs\\node.exe" "D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "watch"
+16 error node v6.10.1
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

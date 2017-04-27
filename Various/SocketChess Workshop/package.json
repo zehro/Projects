@@ -1,0 +1,19 @@
+{
+  "name": "chess_workshop",
+  "version": "1.0.0",
+  "description": "Microsoft Student Workshop using Node.js to set up a multiplayer chess app",
+  "main": "index.js",
+  "dependencies": {
+    "chess.js": "^0.10.2",
+    "chessboardjs": "0.0.1",
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify ./frontend/index.js -o ./public/index.js"
+  },
+  "author": "James Lee",
+  "license": "ISC"
+}
