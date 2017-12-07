@@ -1,0 +1,78 @@
+// main: main.less
+
+// Contact Section Styles
+#contact {
+    .gradient(linear; 180deg; #5e7087 0%, #3e3d77 65%, #4e6e91 100%);
+
+    article {
+        height     : 100vh;
+        overflow-y : auto;
+    }
+
+    .container {
+        background    : fade(black, 30%);
+        border        : 1px solid white;
+        border-radius : 5px;
+        margin-bottom : 1rem;
+        margin-left   : 10%;
+        margin-right  : 10%;
+        padding       : 30px;
+        transition    : 0.3s;
+
+        &:first-of-type {
+            margin-top    : 9.5rem;
+        }
+
+        .link {
+            label {
+                display : inline-block;
+                width   : 6rem;
+            }
+
+            a {
+                text-decoration : underline;
+            }
+        }
+
+        form {
+            margin : 0;
+
+            .half {
+                height     : auto;
+                text-align : left;
+            }
+
+            input, textarea {
+                &:disabled {
+                    opacity : 0.25;
+                }
+            }
+
+            .prompt {
+                margin     : 1rem 0 0 0;
+                opacity    : 0;
+                transition : 0.3s;
+            }
+        }
+
+        &:not(:first-of-type):hover {
+            background : fade(black, 80%);
+
+            label {
+                opacity : 0.25;
+            }
+
+            .prompt {
+                opacity : 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #page_content #contact {
+        article {
+            height : ~"calc(100vh - 3.5rem)";
+        }
+    }
+}

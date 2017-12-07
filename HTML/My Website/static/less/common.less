@@ -1,0 +1,33 @@
+// main: main.less
+
+// Theme Variables
+@import url( "utils/theme.less" );
+
+// Common Class Styles
+body {
+    align-content   : stretch;
+    align-items     : stretch;
+    background      : black;
+    display         : flex;
+    flex-direction  : row;
+    flex-wrap       : nowrap;
+    height          : 100vh;
+    justify-content : flex-start;
+    margin          : 0;
+    overflow        : hidden;
+}
+
+.half {
+    float : left;
+    width : 50%;
+}
+
+button {
+    &.black {
+        background : rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            background : black;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+// main: main.less
+
+// Coding Section Styles
+#page_content #coding {
+    header {
+        h1 {
+            margin     : 0 0.5rem 0 0;
+        }
+
+        .fragment {
+            margin     : 0 auto;
+            text-align : left;
+            width      : 0;
+
+            &.start {
+                border-right : .15em solid white;
+            }
+        }
+
+        #fragment1.start {
+            animation : typeDream   2s steps(5, end), blink-caret .75s step-end infinite;
+        }
+        #fragment2.start {
+            animation : typeCareer  2s steps(6, end), blink-caret .75s step-end infinite;
+        }
+        #fragment3.start {
+            animation : typePassion 2s steps(7, end), blink-caret 1s   step-end infinite;
+            width     : 5em;
+        }
+    }
+
+    .half {
+        padding : 11rem 4% 80px 4%;
+
+        &.left {
+            background : #7e3d8e;
+            .gradient(linear; 160deg; #7e3d8e, #3E194F);
+        }
+
+        &.right {
+            background : #2C8E89;
+            .gradient(linear; 180deg; #2C8E89, #5DAD72);
+        }
+
+        p:last-child {
+            margin : 0;
+        }
+
+        .container {
+            height : 20rem;
+
+            .vgdev_carousel {
+                .item {
+                    align-items : center;
+                    background  : black;
+                    display     : flex;
+                    height      : 15rem;
+                    text-align  : center;
+
+                    img {
+                        display    : inline-block;
+                        margin     : 0 auto;
+                        max-height : 15rem;
+                        max-width  : 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #page_content #coding {
+        .half {
+            padding-top : 10rem;
+
+            .container {
+                height     : auto;
+                min-height : 22rem;
+
+                .vgdev_carousel {
+                    .item {
+                        height : 12rem;
+
+                        img {
+                            max-height : 12rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #page_content #coding {
+        .half {
+            .container {
+                min-height: 15rem;
+            }
+        }
+    }
+}

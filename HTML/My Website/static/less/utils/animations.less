@@ -1,0 +1,178 @@
+// main: ../main.less
+
+@import url( "utils/theme.less" );
+
+/***************************** animation classes **********************************/
+
+/* fade */
+
+.pt-fade {
+	-webkit-animation: fade @animation_time ease both;
+	animation: fade @animation_time ease both;
+}
+
+/* move from / to and fade */
+
+.pt-moveToLeftFade {
+	-webkit-animation: moveToLeftFade @animation_time ease both;
+	animation: moveToLeftFade @animation_time ease both;
+}
+
+.pt-moveFromLeftFade {
+	-webkit-animation: moveFromLeftFade @animation_time ease both;
+	animation: moveFromLeftFade @animation_time ease both;
+}
+
+.pt-moveToRightFade {
+	-webkit-animation: moveToRightFade @animation_time ease both;
+	animation: moveToRightFade @animation_time ease both;
+}
+
+.pt-moveFromRightFade {
+	-webkit-animation: moveFromRightFade @animation_time ease both;
+	animation: moveFromRightFade @animation_time ease both;
+}
+
+.pt-moveToTopFade {
+	-webkit-animation: moveToTopFade @animation_time ease both;
+	animation: moveToTopFade @animation_time ease both;
+}
+
+.pt-moveFromTopFade {
+	-webkit-animation: moveFromTopFade @animation_time ease both;
+	animation: moveFromTopFade @animation_time ease both;
+}
+
+.pt-moveToBottomFade {
+	-webkit-animation: moveToBottomFade @animation_time ease both;
+	animation: moveToBottomFade @animation_time ease both;
+}
+
+.pt-moveFromBottomFade {
+	-webkit-animation: moveFromBottomFade @animation_time ease both;
+	animation: moveFromBottomFade @animation_time ease both;
+}
+
+/* move to with different easing */
+
+.pt-moveToLeftEasing {
+	-webkit-animation: moveToLeft @animation_time ease-in-out both;
+	animation: moveToLeft @animation_time ease-in-out both;
+}
+.pt-moveToRightEasing {
+	-webkit-animation: moveToRight @animation_time ease-in-out both;
+	animation: moveToRight @animation_time ease-in-out both;
+}
+.pt-moveToTopEasing {
+	-webkit-animation: moveToTop @animation_time ease-in-out both;
+	animation: moveToTop @animation_time ease-in-out both;
+}
+.pt-moveToBottomEasing {
+	-webkit-animation: moveToBottom @animation_time ease-in-out both;
+	animation: moveToBottom @animation_time ease-in-out both;
+}
+
+/********************************* keyframes **************************************/
+
+/* fade */
+
+@-webkit-keyframes fade {
+	from { }
+	to { opacity: 0.3; }
+}
+@keyframes fade {
+	from { }
+	to { opacity: 0.3; }
+}
+
+/* move from / to and fade */
+
+@-webkit-keyframes moveToLeftFade {
+	from { }
+	to { opacity: 0.3; -webkit-transform: translateX(-100%); }
+}
+@keyframes moveToLeftFade {
+	from { }
+	to { opacity: 0.3; -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+@-webkit-keyframes moveFromLeftFade {
+	from { opacity: 0.3; -webkit-transform: translateX(-100%); }
+}
+@keyframes moveFromLeftFade {
+	from { opacity: 0.3; -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+@-webkit-keyframes moveToRightFade {
+	from { }
+	to { opacity: 0.3; -webkit-transform: translateX(100%); }
+}
+@keyframes moveToRightFade {
+	from { }
+	to { opacity: 0.3; -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
+
+@-webkit-keyframes moveFromRightFade {
+	from { opacity: 0.3; -webkit-transform: translateX(100%); }
+}
+@keyframes moveFromRightFade {
+	from { opacity: 0.3; -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
+
+@-webkit-keyframes moveToTopFade {
+	from { }
+	to { opacity: 0.3; -webkit-transform: translateY(-100%); }
+}
+@keyframes moveToTopFade {
+	from { }
+	to { opacity: 0.3; -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveFromTopFade {
+	from { opacity: 0.3; -webkit-transform: translateY(-100%); }
+}
+@keyframes moveFromTopFade {
+	from { opacity: 0.3; -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveToBottomFade {
+	from { }
+	to { opacity: 0.3; -webkit-transform: translateY(100%); }
+}
+@keyframes moveToBottomFade {
+	from { }
+	to { opacity: 0.3; -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
+@-webkit-keyframes moveFromBottomFade {
+	from { opacity: 0.3; -webkit-transform: translateY(100%); }
+}
+@keyframes moveFromBottomFade {
+	from { opacity: 0.3; -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
+/* typewriter effects */
+@keyframes typeDream {
+    from { width: 0; }
+    30%  { width: 4em; }
+    60%  { width: 4em; }
+    90%  { width: 0; }
+    100% { width: 0; }
+}
+@keyframes typeCareer {
+    from { width: 0; }
+    30%  { width: 4.5em; }
+    60%  { width: 4.5em; }
+    90%  { width: 0; }
+    100% { width: 0; }
+}
+@keyframes typePassion {
+    from { width: 0; }
+    to { width: 4.85em; }
+}
+
+/* typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}

@@ -1,0 +1,36 @@
+// main: ../main.less
+
+/*******************************
+         Scrollbars
+*******************************/
+
+@customScrollbarWidth: 10px;
+@trackBackground: fade(black, 10%);
+@trackBorderRadius: 0px;
+@thumbBorderRadius: 5px;
+@thumbBackground: fade(black, 25%);
+@thumbTransition: color 0.2s ease;
+@thumbInactiveBackground: fade(black, 15%);
+@thumbHoverBackground: fade(#80878b, 80%);
+
+/* Force Simple Scrollbars */
+body ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: @customScrollbarWidth;
+}
+body ::-webkit-scrollbar-track {
+    background: @trackBackground;
+    border-radius: @trackBorderRadius;
+}
+body ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: @thumbBorderRadius;
+    background: @thumbBackground;
+    transition: @thumbTransition;
+}
+body ::-webkit-scrollbar-thumb:window-inactive {
+    background: @thumbInactiveBackground;
+}
+body ::-webkit-scrollbar-thumb:hover {
+    background: @thumbHoverBackground;
+}

@@ -1,0 +1,71 @@
+// main: main.less
+
+// Design Section Styles
+#page_content #design {
+    background: url(../images/art.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    article {
+        padding-top: 8.25rem;
+        overflow-y: auto;
+        height: 100%;
+
+        .text {
+            background: black;
+            padding: 2rem 4%;
+            margin: 0;
+        }
+
+        .art {
+            background: fade(black, 50%);
+            height: 10rem;
+        }
+
+        .half {
+            height: auto;
+
+            &.left {
+                background: black;
+            }
+
+            &.right {
+                background: #222;
+            }
+
+            h2 {
+                margin-top: 1rem;
+            }
+
+            .description {
+                margin: 0 5%;
+                min-height: 7rem;
+            }
+
+            .container {
+                margin-top: 20px;
+
+                .item {
+                    overflow: hidden;
+
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    ::-webkit-scrollbar-track {
+        background: fade(black, 50%);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #page_content #design {
+        article {
+            padding-top: 8.5rem;
+        }
+    }
+}

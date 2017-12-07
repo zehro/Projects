@@ -1,0 +1,58 @@
+// main: ../main.less
+
+.center(@direction: row) {
+    display: flex;
+    flex-direction: @direction;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+
+.gradient(@type; @direction; @colors; @prefixes: webkit, moz, ms, o; @index: length(@prefixes)) when (@index > 0) {
+    .gradient(@type; @direction; @colors; @prefixes; (@index - 1));
+
+    @prefix  : extract(@prefixes, @index);
+    @dir-old : 90 - (@direction);
+
+    background: ~"-@{prefix}-@{type}-gradient(@{dir-old}, @{colors})";
+  & when ( @index = length(@prefixes) ) {
+        background: ~"@{type}-gradient(@{direction}, @{colors})";
+    }
+}
+
+.gradient-animation(@start-type; @start-direction; @start-colors; @end-type; @end-direction; @end-colors; @time) {
+    .gradient(@start-type; @start-direction; @start-colors);
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        .gradient(@end-type; @end-direction; @end-colors);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -1;
+        transition: opacity @time;
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+
+.animate(@type; @time; @transition: ease) {
+    -webkit-transition: @type @time @transition;
+       -moz-transition: @type @time @transition;
+        -ms-transition: @type @time @transition;
+         -o-transition: @type @time @transition;
+            transition: @type @time @transition;
+}

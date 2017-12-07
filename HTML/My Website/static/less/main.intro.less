@@ -1,0 +1,82 @@
+// main: main.less
+
+// Intro Section Styles
+#page_content #intro {
+    .half {
+        padding : 16rem 4% 5rem 4%;
+
+        &.left {
+            background : #319235;
+            .gradient-animation(
+                linear; 160deg; #0C3D11, #074F0F 45%, #062605;
+                linear; 160deg; #0C3D11, #1A9E1F 45%, #062605;
+                1s);
+
+            &:before {
+                left     : 0;
+                position : fixed;
+                width    : 42.5%;
+            }
+        }
+
+        &.right {
+            background : #da7b3b;
+            .gradient-animation(
+                linear; 135deg; #962E2E, #96903D;
+                linear; 135deg; #FF4E50, #F9D423;
+                1s);
+
+            &:before {
+                left     : 42.5%;
+                position : fixed;
+                width    : 42.5%;
+            }
+        }
+
+        &.left, &.right {
+
+        }
+
+        .container_items {
+            height     : 15%;
+            min-height : 11.2rem;
+            overflow   : hidden;
+
+            .item {
+                background    : fade(black, 50%);
+                border        : 2px solid white;
+                border-radius : 10px;
+                cursor        : default;
+                display       : inline-block;
+                margin        : 4px 2px;
+                padding       : 2px 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #page_content #intro {
+        .half {
+            padding-top : 11rem;
+
+            &.left {
+                &:before {
+                    left     : 0;
+                    position : fixed;
+                    top      : 3.5rem;
+                    width    : 50%;
+                }
+            }
+
+            &.right {
+                &:before {
+                    left     : 50%;
+                    position : fixed;
+                    top      : 3.5rem;
+                    width    : 50%;
+                }
+            }
+        }
+    }
+}

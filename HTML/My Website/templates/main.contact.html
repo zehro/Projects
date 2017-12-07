@@ -1,0 +1,45 @@
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+<article>
+    <div class="container">
+        <div class="link">
+            <label class="label">Email:</label>
+            <a href="mailto:lee.zehro@gatech.edu">lee.zehro@gatech.edu</a>
+        </div>
+        <div class="link">
+            <label class="label">GitHub:</label>
+            <a href="https://github.com/zehro">https://github.com/zehro</a>
+        </div>
+        <div class="link">
+            <label class="label">LinkedIn:</label>
+            <a href="https://www.linkedin.com/in/zehro">https://www.linkedin.com/in/zehro</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <form method="post">
+            <div class="field half first">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" disabled/>
+            </div>
+            <div class="field half">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" disabled/>
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="1" disabled></textarea>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" class="special disabled"/></li>
+            </ul>
+
+            <div class="prompt">
+                Unfortunately, the site's server can only host static pages.
+                So no PHP. Or Flask. ¯\_(ツ)_/¯
+            </div>
+        </form>
+    </div>
+</article>
