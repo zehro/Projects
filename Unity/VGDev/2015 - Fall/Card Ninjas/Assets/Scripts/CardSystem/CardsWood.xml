@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<library>
+  <!--Melee-->
+  <card name= "Tanto">
+    <element>Wood</element>
+    <image>Cards/TAnto</image>
+    <type>Tanto</type>
+    <action range= "1" damage= "6" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A wooden short sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Wooden Wakizashi">
+    <element>Wood</element>
+    <image>Cards/Wakisashi</image>
+    <type>Wakizashi</type>
+    <action range= "1" damage= "7" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A wooden medium sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Wooden Katana">
+    <element>Wood</element>
+    <image>Cards/Sword1</image>
+    <type>SwordHori</type>
+    <action range= "1" damage= "9" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A wooden standard sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Curved Wooden Blade">
+    <element>Wood</element>
+    <image>Cards/curvedSword</image>
+    <type>SwordHori</type>
+    <action range= "2" damage= "8" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A wooden sword that hits the tile in front of you and the tile below.</description>
+  </card>
+  <card name= "Wide Wooden Sword">
+    <element>Wood</element>
+    <image>Cards/WideSword</image>
+    <type>WideSword</type>
+    <action range= "3" damage= "7" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A wooden sword that hits the tile in front of you and the tiles above and below.</description>
+  </card>
+  <card name= "Wooden Naginata">
+    <element>Wood</element>
+    <image>Cards/Spear</image>
+    <type>NaginataHori</type>
+    <action range= "2" damage= "9" prefab= "Prefabs/SlashEffect">MeleeVertical</action>
+    <description>A wooden spear that hits 2 tiles in front of you.</description>
+  </card>
+  <card name= "Wooden Kanobo">
+    <element>Wood</element>
+    <image>Cards/Kanobo</image>
+    <type>Kanobo</type>
+    <action range= "1" damage= "10" prefab= "Prefabs/SlashStun">MeleeHorizontal</action>
+    <description>A studded mace that hits hard and stuns the enemy in front of you.</description>
+  </card>
+  <card name= "Wooden Tonfa">
+    <element>Wood</element>
+    <image>Cards/Tonfa</image>
+    <type>Tonfa</type>
+    <action range= "1" damage= "5" prefab= "Prefabs/SlashStun">MeleeHorizontal</action>
+    <description>A wooden weapon that can attack and stun the enemy in front of you.</description>
+  </card>
+  <card name= "Wooden Bo Staff">
+    <element>Wood</element>
+    <image>Cards/Bo Staff</image>
+    <type>BoStaff</type>
+    <action range= "2" damage= "7" prefab= "Prefabs/SlashStun">MeleeVertical</action>
+    <description>A wooden staff that stuns 2 tiles in front of you.</description>
+  </card>
+
+  <!--Ranged-->
+  <card name= "Single Wooden Kunai">
+    <element>Wood</element>
+    <image>Cards/Kunai1</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws a wooden kunai in front of you.</description>
+  </card>
+  <card name= "Double Wooden Kunai">
+    <element>Wood</element>
+    <image>Cards/Kunai2</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws a wooden kunai in the row front and below you.</description>
+  </card>
+  <card name= "Triple Wooden Kunai">
+    <element>Wood</element>
+    <image>Cards/Kunai3</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws a wooden kunai in all three rows.</description>
+  </card>
+  <card name= "Single Wooden Shuriken">
+    <element>Wood</element>
+    <image>Cards/One Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws a wooden shuriken in front of you.</description>
+  </card>
+  <card name= "Double Wooden Shuriken">
+    <element>Wood</element>
+    <image>Cards/Two Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws a wooden shuriken in the row front and below you.</description>
+  </card>
+  <card name= "Triple Wooden Shuriken">
+    <element>Wood</element>
+    <image>Cards/Three Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws a wooden shuriken in all the rows.</description>
+  </card>
+  <card name= "Single Wooden Sai">
+    <element>Wood</element>
+    <image>Cards/Single Sai</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws a wooden sai dagger in front of you.</description>
+  </card>
+  <card name= "Double Wooden Sai">
+    <element>Wood</element>
+    <image>Cards/Double Sai</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws a wooden sai dagger in the row front and below you.</description>
+  </card>
+  <card name= "Triple Wooden Sai">
+    <element>Wood</element>
+    <image>Cards/Triple Sai</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws a wooden sai dagger in all the rows.</description>
+  </card>
+  <card name= "Wooden Naginata Throw">
+    <element>Wood</element>
+    <image>Cards/Throwing Spear</image>
+    <type>ThrowMid</type>
+    <action range= "9" damage= "9" prefab= "Prefabs/Spear">SpearAction</action>
+    <description>A wooden spear thrown at the tiles in front of you, piercing the first enemy and stopping at the second.</description>
+  </card>
+
+  <!--Unique-->
+  <card name= "Single Bamboo Dart">
+    <element>Wood</element>
+    <image>Cards/Single Dart</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "0" prefab= "Prefabs/Dart">Projectile</action>
+    <description>Shoots a stun dart down the current row.</description>
+  </card>
+  <card name= "Double Bamboo Dart">
+    <element>Wood</element>
+    <image>Cards/Two Darts</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "0" prefab= "Prefabs/Dart">Projectile</action>
+    <description>Shoots a stun dart down the current row and row below.</description>
+  </card>
+  <card name= "Triple Bamboo Dart">
+    <element>Wood</element>
+    <image>Cards/Three Darts</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "0" prefab= "Prefabs/Dart">Projectile</action>
+    <description>Shoots a stun dart down all the rows.</description>
+  </card>
+  <card name= "Bamboo Sneak">
+    <element>Wood</element>
+    <image>Cards/Bamboo Sneak</image>
+    <type>ChiStationary</type>
+    <action range= "1" damage= "3" prefab= "Prefabs/Bamboo">Bamboo</action>
+    <description>A bamboo strike on the enemy's furthest panel.</description>
+  </card>
+  <card name= "Tree Growth">
+    <element>Wood</element>
+    <image>Cards/Tree Growth</image>
+    <type>ChiAttack</type>
+    <action range= "3" damage= "8" prefab= "Prefabs/Tree">GrowTree</action>
+    <description>Grow a tree three spaces in front of you.</description>
+  </card>
+</library>

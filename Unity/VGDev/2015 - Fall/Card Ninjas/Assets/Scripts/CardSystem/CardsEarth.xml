@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<library>
+  <!--Melee-->
+  <card name= "Earth Tanto">
+    <element>Earth</element>
+    <image>Cards/Tanto</image>
+    <type>Tanto</type>
+    <action range= "1" damage= "6" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>An earth-elemental short sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Earth Wakizashi">
+    <element>Earth</element>
+    <image>Cards/Wakisashi</image>
+    <type>Wakizashi</type>
+    <action range= "1" damage= "7" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>An earth-elemental medium sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Earth Katana">
+    <element>Earth</element>
+    <image>Cards/Sword1</image>
+    <type>SwordHori</type>
+    <action range= "1" damage= "9" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>An earth-elemental standard sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Curved Earth Blade">
+    <element>Earth</element>
+    <image>Cards/curvedSword</image>
+    <type>SwordHori</type>
+    <action range= "2" damage= "8" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>An earth-elemental sword that hits the tile in front of you and the tile below.</description>
+  </card>
+  <card name= "Wide Earth Sword">
+    <element>Earth</element>
+    <image>Cards/WideSword</image>
+    <type>WideSword</type>
+    <action range= "3" damage= "7" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A, earth-elemental sword that hits the tile in front of you and the tiles above and below.</description>
+  </card>
+  <card name= "Earth Naginata">
+    <element>Earth</element>
+    <image>Cards/Spear</image>
+    <type>NaginataHori</type>
+    <action range= "2" damage= "9" prefab= "Prefabs/SlashEffect">MeleeVertical</action>
+    <description>A, earth-elemental spear that hits 2 tiles in front of you.</description>
+  </card>
+  <card name= "Earthened Kanobo">
+    <element>Earth</element>
+    <image>Cards/Kanobo</image>
+    <type>Kanobo</type>
+    <action range= "1" damage= "10" prefab= "Prefabs/SlashStun">MeleeHorizontal</action>
+    <description>A studded, earth-elemental mace that hits hard and stuns the enemy in front of you.</description>
+  </card>
+  <card name= "Earthened Hammer Slam">
+    <element>Earth</element>
+    <image>Cards/Hammer</image>
+    <type>HammerVert</type>
+    <action range= "1" damage= "11" prefab= "Prefabs/SlashStun">MeleeHorizontal</action>
+    <description>Slams and stuns the enemy in front of you.</description>
+  </card>
+  <card name= "Earthened Hammer Swing">
+    <element>Earth</element>
+    <image>Cards/Hammer</image>
+    <type>HammerHori</type>
+    <action range= "3" damage= "8" prefab= "Prefabs/SlashStun">MeleeHorizontal</action>
+    <description>Slams and stuns the enemies in the tile in front of you and the tiles above and below..</description>
+  </card>
+
+  <!--Ranged-->
+  <card name= "Single Earth Kunai">
+    <element>Earth</element>
+    <image>Cards/Kunai1</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws an earth-elemental kunai in front of you.</description>
+  </card>
+  <card name= "Double Earth Kunai">
+    <element>Earth</element>
+    <image>Cards/Kunai2</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws an earth-elemental kunai in the row front and below you.</description>
+  </card>
+  <card name= "Triple Earth Kunai">
+    <element>Earth</element>
+    <image>Cards/Kunai3</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws an earth-elemental kunai in all three rows.</description>
+  </card>
+  <card name= "Single Earth Shuriken">
+    <element>Earth</element>
+    <image>Cards/One Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws an earth-elemental shuriken in front of you.</description>
+  </card>
+  <card name= "Double Earth Shuriken">
+    <element>Earth</element>
+    <image>Cards/Two Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws an earth-elemental shuriken in the row front and below you.</description>
+  </card>
+  <card name= "Triple Earth Shuriken">
+    <element>Earth</element>
+    <image>Cards/Three Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws an earth-elemental shuriken in all the rows.</description>
+  </card>
+  <card name= "Single Earth Sai">
+    <element>Earth</element>
+    <image>Cards/Single Sai</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws an earth-elemental sai dagger in front of you.</description>
+  </card>
+  <card name= "Double Earth Sai">
+    <element>Earth</element>
+    <image>Cards/Double Sai</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws an earth-elemental sai dagger in the row front and below you.</description>
+  </card>
+  <card name= "Triple Earth Sai">
+    <element>Earth</element>
+    <image>Cards/Triple Sai</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws an earth-elemental sai dagger in all the rows.</description>
+  </card>
+  <card name= "Earth Naginata Throw">
+    <element>Earth</element>
+    <image>Cards/Throwing Spear</image>
+    <type>ThrowMid</type>
+    <action range= "9" damage= "9" prefab= "Prefabs/Spear">SpearAction</action>
+    <description>An earth-elemental spear thrown at the tiles in front of you, piercing the first enemy and stopping at the second.</description>
+  </card>
+
+  <!--Unique-->
+  <card name= "Earth Throw">
+    <element>Earth</element>
+    <image>Cards/Earth Throw</image>
+    <type>ChiAttack</type>
+    <action range= "1" damage= "5" prefab= "Prefabs/Rock">EarthChuck</action>
+    <description>Throws a piercing rock chunk in front of you.</description>
+  </card>
+  <card name= "Earth Swing">
+    <element>Earth</element>
+    <image>Cards/Earth Swing</image>
+    <type>ChiAttack</type>
+    <action range= "2" damage= "5" prefab= "Prefabs/Rock">EarthChuck</action>
+    <description>Throws two piercing rock chunks in the row front and below you.</description>
+  </card>
+  <card name= "Earth Barrage">
+    <element>Earth</element>
+    <image>Cards/Earth Barrage</image>
+    <type>ChiAttack</type>
+    <action range= "3" damage= "5" prefab= "Prefabs/Rock">EarthChuck</action>
+    <description>Throws piercing rock chunks downs all the rows.</description>
+  </card>
+  <card name= "Tremor">
+    <element>Earth</element>
+    <image>Cards/Tremor</image>
+    <type>HammerVert</type>
+    <action range= "2" damage= "10" prefab= "Prefabs/Tremor">DestroyTile</action>
+    <description>The earth swells two tiles in front of you and destroys the third tile.</description>
+  </card>
+</library>

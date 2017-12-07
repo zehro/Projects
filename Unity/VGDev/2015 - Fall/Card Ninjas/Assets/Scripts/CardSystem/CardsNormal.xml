@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<library>
+  <!--Melee-->
+  <card name= "Tanto">
+    <element>None</element>
+    <image>Cards/Tanto</image>
+    <type>Tanto</type>
+    <action range= "1" damage= "6" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A short sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Wakizashi">
+    <element>None</element>
+    <image>Cards/Wakisashi</image>
+    <type>Wakizashi</type>
+    <action range= "1" damage= "7" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A medium sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Katana">
+    <element>None</element>
+    <image>Cards/Sword1</image>
+    <type>SwordHori</type>
+    <action range= "1" damage= "9" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A standard sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Curved Blade">
+    <element>None</element>
+    <image>Cards/curvedSword</image>
+    <type>SwordHori</type>
+    <action range= "2" damage= "8" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A sword that hits the tile in front of you and the tile below.</description>
+  </card>
+  <card name= "Wide Sword">
+    <element>None</element>
+    <image>Cards/WideSword</image>
+    <type>WideSword</type>
+    <action range= "3" damage= "7" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A sword that hits the tile in front of you and the tiles above and below.</description>
+  </card>
+  <card name= "Naginata">
+    <element>None</element>
+    <image>Cards/Spear</image>
+    <type>NaginataHori</type>
+    <action range= "2" damage= "9" prefab= "Prefabs/SlashEffect">MeleeVertical</action>
+    <description>A spear that hits 2 tiles in front of you.</description>
+  </card>
+  <card name= "Tonfa">
+    <element>None</element>
+    <image>Cards/Tonfa</image>
+    <type>Tonfa</type>
+    <action range= "1" damage= "5" prefab= "Prefabs/SlashStun">MeleeHorizontal</action>
+    <description>A wooden weapon that can attack and stun the enemy in front of you.</description>
+  </card>
+  <card name= "Bo Staff">
+    <element>None</element>
+    <image>Cards/Bo Staff</image>
+    <type>BoStaff</type>
+    <action range= "2" damage= "7" prefab= "Prefabs/SlashStun">MeleeVertical</action>
+    <description>A staff that stuns 2 tiles in front of you.</description>
+  </card>
+  <card name= "Kanobo">
+    <element>None</element>
+    <image>Cards/Kanobo</image>
+    <type>Kanobo</type>
+    <action range= "1" damage= "10" prefab= "Prefabs/SlashStun">MeleeHorizontal</action>
+    <description>A studded mace that hits hard and stuns the enemy in front of you.</description>
+  </card>
+  <card name= "Regular Fan">
+    <element>None</element>
+    <image>Cards/RegularFan</image>
+    <type>Fan</type>
+    <action range= "1" damage= "4" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A fan that hits the tile in front of you.</description>
+  </card>
+  <card name= "Wide Fan">
+    <element>None</element>
+    <image>Cards/WideFan</image>
+    <type>Fan</type>
+    <action range= "3" damage= "4" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A fan that hits the tile in front of you and the tiles above and below.</description>
+  </card>
+  <card name= "Long Fan">
+    <element>None</element>
+    <image>Cards/Long Fan</image>
+    <type>Fan</type>
+    <action range= "3" damage= "4" prefab= "Prefabs/SlashEffect">MeleeVertical</action>
+    <description>A fan that hits 3 tiles in front of you.</description>
+  </card>
+  <card name= "Hammer Slam">
+    <element>None</element>
+    <image>Cards/Hammer</image>
+    <type>HammerVert</type>
+    <action range= "1" damage= "11" prefab= "Prefabs/SlashStun">MeleeHorizontal</action>
+    <description>Slams and stuns the enemy in front of you.</description>
+  </card>
+  <card name= "Hammer Swing">
+    <element>None</element>
+    <image>Cards/Hammer</image>
+    <type>HammerHori</type>
+    <action range= "3" damage= "8" prefab= "Prefabs/SlashStun">MeleeHorizontal</action>
+    <description>Slams and stuns the enemies in the tile in front of you and the tiles above and below..</description>
+  </card>
+
+  <!--Ranged-->
+  <card name= "Single Kunai">
+    <element>None</element>
+    <image>Cards/Kunai1</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws a kunai in front of you.</description>
+  </card>
+  <card name= "Double Kunai">
+    <element>None</element>
+    <image>Cards/Kunai2</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws a kunai in the row front and below you.</description>
+  </card>
+  <card name= "Triple Kunai">
+    <element>None</element>
+    <image>Cards/Kunai3</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws a kunai in all three rows.</description>
+  </card>
+  <card name= "Single Shuriken">
+    <element>None</element>
+    <image>Cards/One Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws a shuriken in front of you.</description>
+  </card>
+  <card name= "Double Shuriken">
+    <element>None</element>
+    <image>Cards/Two Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws a shuriken in the row front and below you.</description>
+  </card>
+  <card name= "Triple Shuriken">
+    <element>None</element>
+    <image>Cards/Three Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws a shuriken in all the rows.</description>
+  </card>
+  <card name= "Single Sai">
+    <element>None</element>
+    <image>Cards/Single Sai</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws a sai dagger in front of you.</description>
+  </card>
+  <card name= "Double Sai">
+    <element>None</element>
+    <image>Cards/Double Sai</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws a sai dagger in the row front and below you.</description>
+  </card>
+  <card name= "Triple Sai">
+    <element>None</element>
+    <image>Cards/Triple Sai</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws a sai dagger in all the rows.</description>
+  </card>
+  <card name= "Naginata Throw">
+    <element>None</element>
+    <image>Cards/Throwing Spear</image>
+    <type>ThrowMid</type>
+    <action range= "9" damage= "9" prefab= "Prefabs/Spear">SpearAction</action>
+    <description>A spear thrown at the tiles in front of you, piercing the first enemy and stopping at the second.</description>
+  </card>
+
+  <!--Unique-->
+  <card name= "Tetsubishi Drop">
+    <element>None</element>
+    <image>Cards/Tetsubishi Drop</image>
+    <type>SwordHori</type>
+    <action range= "1" damage= "1" prefab= "Prefabs/Tetsubishi">Oil</action>
+    <description>Throws small caltrop traps that can stun the enemy in front of you.</description>
+  </card>
+  <card name= "Tetsubishi Spray">
+    <element>None</element>
+    <image>Cards/Tetsubishi Spray</image>
+    <type>SwordHori</type>
+    <action range= "2" damage= "1" prefab= "Prefabs/Tetsubishi">Oil</action>
+    <description>Throws a cone of caltrop traps in front of you.</description>
+  </card>
+  <card name= "Tetsubishi Line">
+    <element>None</element>
+    <image>Cards/Tetsubishi Line</image>
+    <type>SwordHori</type>
+    <action range= "3" damage= "1" prefab= "Prefabs/Tetsubishi">Oil</action>
+    <description>Throws a line of caltrop traps in front of you.</description>
+  </card>
+  <card name= "Fuma Shuriken">
+    <element>None</element>
+    <image>Cards/Fuma Shuriken</image>
+    <type>ThrowMid</type>
+    <action range= "1" damage= "7" prefab= "Prefabs/FumaShuriken">BackNForthAction</action>
+    <description>A fuma shuriken that slices back and forth through 1 enemies.</description>
+  </card>
+  <card name= "Sharpened Fuma Shuriken">
+    <element>None</element>
+    <image>Cards/Fuma Shuriken</image>
+    <type>ThrowMid</type>
+    <action range= "2" damage= "7" prefab= "Prefabs/FumaShuriken">BackNForthAction</action>
+    <description>A fuma shuriken that slices back and forth through 2 enemies.</description>
+  </card>
+  <card name= "Piercing Fuma Shuriken">
+    <element>None</element>
+    <image>Cards/Fuma Shuriken</image>
+    <type>ThrowMid</type>
+    <action range= "3" damage= "7" prefab= "Prefabs/FumaShuriken">BackNForthAction</action>
+    <description>A fuma shuriken that slices back and forth through 3 enemies.</description>
+  </card>
+  <card name= "Bouncing Shuriken">
+    <element>None</element>
+    <image>Cards/One Shuriken</image>
+    <type>ThrowMid</type>
+    <action range= "3" damage= "5" prefab= "Prefabs/SpecialShuriken">ZigZagAction</action>
+    <description>A special shuriken that bounces in a zig-zag pattern.</description>
+  </card>
+  <card name= "Hadouken">
+    <element>None</element>
+    <image>Cards/Hadouken</image>
+    <type>ChiAttack</type>
+    <action range= "0" damage= "5" prefab= "Prefabs/Laser">Laser</action>
+    <description>Channels your chi into a special ninjutsu blast.</description>
+  </card>
+</library>

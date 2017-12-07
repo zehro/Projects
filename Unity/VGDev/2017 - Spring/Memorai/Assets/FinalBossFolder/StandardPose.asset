@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: StandardPose
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Root
+    localPosition: {x: -1.2361653, y: -3.5227845, z: 2}
+    localRotation: {x: 0, y: 0, z: -0.70913666, w: -0.7050711}
+    localScale: {x: 2.553334, y: 2.5578215, z: 1}
+  - path: Root/LowerBody
+    localPosition: {x: 0.6900001, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.007133184, w: 0.99997455}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Root/LowerBody/UpperBone
+    localPosition: {x: 2.0075438, y: -5.3842086e-10, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.0016905612, w: 0.9999986}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Root/LowerBody/SideCoatLeft
+    localPosition: {x: 1.5587647, y: 1.6863823, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.94113183, w: 0.33804}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Root/LowerBody/SideCoatRight
+    localPosition: {x: 1.4384406, y: -2.1270695, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.95211023, w: 0.30575517}
+    localScale: {x: 1, y: 1, z: 1}

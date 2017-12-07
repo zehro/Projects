@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<library>
+  <card name= "Regular Heal">
+    <element>None</element>
+    <image>Cards/Heal1</image>
+    <type>ChiStationary</type>
+    <action range= "1" damage= "10" prefab= "">Heal</action>
+    <description>A basic Health restore.</description>
+  </card>
+  <card name= "Greater Heal">
+    <element>None</element>
+    <image>Cards/Heal2</image>
+    <type>ChiStationary</type>
+    <action range= "1" damage= "25" prefab= "">Heal</action>
+    <description>A medium Health restore.</description>
+  </card>
+  <card name= "Ultra Heal">
+    <element>None</element>
+    <image>Cards/Heal3</image>
+    <type>ChiStationary</type>
+    <action range= "1" damage= "50" prefab= "">Heal</action>
+    <description>A large Health restore.</description>
+  </card>
+  <card name= "Regular Shield">
+    <element>None</element>
+    <image>Cards/Shield</image>
+    <type>ChiStationary</type>
+    <action range= "0" damage= "0" prefab= "Prefabs/Shield">Shield</action>
+    <description>A magic shield that protects from 1 hit.</description>
+  </card>
+  <card name= "Super Shield">
+    <element>None</element>
+    <image>Cards/Shield</image>
+    <type>ChiStationary</type>
+    <action range= "0" damage= "0" prefab= "Prefabs/Shield">Shield</action>
+    <description>A magic shield that protects from 2 hits.</description>
+  </card>
+  <card name= "Ultra Shield">
+    <element>None</element>
+    <image>Cards/Shield</image>
+    <type>ChiStationary</type>
+    <action range= "0" damage= "0" prefab= "Prefabs/Shield">Shield</action>
+    <description>A magic shield that protects from 3 hits.</description>
+  </card>
+  <card name= "Panel Grab">
+    <element>None</element>
+    <image>Cards/Panel Grab</image>
+    <type>ChiStationary</type>
+    <action range= "1" damage= "0" prefab= "">PanelSteal</action>
+    <description>Steals a nearby enemy panel.</description>
+  </card>
+  <card name= "Line Grab">
+    <element>None</element>
+    <image>Cards/Panel Line</image>
+    <type>ChiStationary</type>
+    <action range= "3" damage= "0" prefab= "">PanelSteal</action>
+    <description>Steals the closest line of enemy panels.</description>
+  </card>
+</library>

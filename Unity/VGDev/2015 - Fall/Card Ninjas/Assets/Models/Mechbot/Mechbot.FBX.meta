@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: 739adc9e81b2736448afb72485f6df63
+timeCreated: 1445538097
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: BustN
+    100002: Dummy002
+    100004: Dummy003
+    100006: Dummy004
+    100008: Dummy005
+    100010: Dummy006
+    100012: Dummy007
+    100014: Dummy01
+    100016: HipN
+    100018: LFootJ
+    100020: LHipN
+    100022: LKneeJ
+    100024: LLegN
+    100026: LToeN
+    100028: Mechbot
+    100030: //RootNode
+    100032: RFootJ
+    100034: RHipN
+    100036: RKneeJ
+    100038: RLegN
+    100040: RToeN
+    100042: TopN
+    400000: BustN
+    400002: Dummy002
+    400004: Dummy003
+    400006: Dummy004
+    400008: Dummy005
+    400010: Dummy006
+    400012: Dummy007
+    400014: Dummy01
+    400016: HipN
+    400018: LFootJ
+    400020: LHipN
+    400022: LKneeJ
+    400024: LLegN
+    400026: LToeN
+    400028: //RootNode
+    400030: Mechbot
+    400032: RFootJ
+    400034: RHipN
+    400036: RKneeJ
+    400038: RLegN
+    400040: RToeN
+    400042: TopN
+    4300000: Mechbot
+    7400000: MechbotWait
+    7400002: MechbotChi
+    7400004: MechbotFire
+    7400006: MechbotHurt
+    9500000: //RootNode
+    13700000: Mechbot
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: MechbotWait
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mechbot
+        weight: 1
+      - path: TopN
+        weight: 1
+      - path: TopN/HipN
+        weight: 1
+      - path: TopN/HipN/BustN
+        weight: 1
+      - path: TopN/HipN/Dummy01
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002/Dummy003
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002/Dummy003/Dummy004
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007/Dummy005
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007/Dummy005/Dummy006
+        weight: 1
+      - path: TopN/HipN/LHipN
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ/LFootJ
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ/LFootJ/LToeN
+        weight: 1
+      - path: TopN/HipN/RHipN
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ/RFootJ
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ/RFootJ/RToeN
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: MechbotChi
+      takeName: Take 001
+      firstFrame: 45
+      lastFrame: 65
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mechbot
+        weight: 1
+      - path: TopN
+        weight: 1
+      - path: TopN/HipN
+        weight: 1
+      - path: TopN/HipN/BustN
+        weight: 1
+      - path: TopN/HipN/Dummy01
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002/Dummy003
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002/Dummy003/Dummy004
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007/Dummy005
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007/Dummy005/Dummy006
+        weight: 1
+      - path: TopN/HipN/LHipN
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ/LFootJ
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ/LFootJ/LToeN
+        weight: 1
+      - path: TopN/HipN/RHipN
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ/RFootJ
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ/RFootJ/RToeN
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: MechbotFire
+      takeName: Take 001
+      firstFrame: 65
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mechbot
+        weight: 1
+      - path: TopN
+        weight: 1
+      - path: TopN/HipN
+        weight: 1
+      - path: TopN/HipN/BustN
+        weight: 1
+      - path: TopN/HipN/Dummy01
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002/Dummy003
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002/Dummy003/Dummy004
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007/Dummy005
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007/Dummy005/Dummy006
+        weight: 1
+      - path: TopN/HipN/LHipN
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ/LFootJ
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ/LFootJ/LToeN
+        weight: 1
+      - path: TopN/HipN/RHipN
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ/RFootJ
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ/RFootJ/RToeN
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: MechbotHurt
+      takeName: Take 001
+      firstFrame: 85
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mechbot
+        weight: 1
+      - path: TopN
+        weight: 1
+      - path: TopN/HipN
+        weight: 1
+      - path: TopN/HipN/BustN
+        weight: 1
+      - path: TopN/HipN/Dummy01
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002/Dummy003
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy002/Dummy003/Dummy004
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007/Dummy005
+        weight: 1
+      - path: TopN/HipN/Dummy01/Dummy007/Dummy005/Dummy006
+        weight: 1
+      - path: TopN/HipN/LHipN
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ/LFootJ
+        weight: 1
+      - path: TopN/HipN/LHipN/LLegN/LKneeJ/LFootJ/LToeN
+        weight: 1
+      - path: TopN/HipN/RHipN
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ/RFootJ
+        weight: 1
+      - path: TopN/HipN/RHipN/RLegN/RKneeJ/RFootJ/RToeN
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: TopN
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

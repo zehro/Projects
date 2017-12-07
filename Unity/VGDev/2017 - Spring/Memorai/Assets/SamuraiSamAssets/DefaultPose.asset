@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: DefaultPose
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: SkeletonRoot
+    localPosition: {x: -0.03, y: -0.83, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LowerBody
+    localPosition: {x: 0.19999993, y: 0.000000014901161, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.000004023314, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LowerBody/UpperBody
+    localPosition: {x: 0.9999999, y: -0.000000029802322, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.062359136, w: 0.9980538}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LowerBody/UpperBody/HeadBone
+    localPosition: {x: 1.1799997, y: 0.000000003958121, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.08236187, w: 0.99660254}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LowerBody/UpperBody/ArmFrontTop
+    localPosition: {x: 0.8944688, y: -0.059259154, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.99193877, w: 0.1267185}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LowerBody/UpperBody/ArmFrontTop/ArmFrontLower
+    localPosition: {x: 0.87408483, y: -0.000000029802322, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.105995074, w: 0.9943667}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LowerBody/UpperBody/ArmFrontTop/ArmFrontLower/SwordBone
+    localPosition: {x: 0.67511076, y: 0.000000041909516, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.68240243, w: 0.73097676}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LowerBody/UpperBody/ArmFrontTop/ArmFrontLower/SwordBone/SwordBone2
+    localPosition: {x: 1.349134, y: 0.000000834465, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.008264327, w: 0.9999659}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LowerBody/UpperBody/ArmBackTop
+    localPosition: {x: 0.9441274, y: -0.059024464, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.96041656, w: 0.27856788}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LowerBody/UpperBody/ArmBackTop/ArmBackLower
+    localPosition: {x: 0.84000075, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.4554035, w: 0.8902852}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LegBackTop
+    localPosition: {x: 0.3081795, y: 0.20195833, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9999058, w: -0.013724549}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LegBackTop/LegBackLower
+    localPosition: {x: 0.84399074, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.037606716, w: 0.9992927}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LegBackTop/LegBackLower/LegBackFoot
+    localPosition: {x: 0.70754725, y: -0.000000022118911, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.7210421, w: 0.69289136}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LegFrontTop
+    localPosition: {x: 0.27494133, y: -0.18946394, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.99967384, w: 0.025539048}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LegFrontTop/LegFrontLower
+    localPosition: {x: 0.84154797, y: -0.000000007450581, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.008651884, w: 0.9999626}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: SkeletonRoot/LegFrontTop/LegFrontLower/LegFrontFoot
+    localPosition: {x: 0.5990471, y: -0.000000029670097, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.6539377, w: 0.75654846}
+    localScale: {x: 1, y: 1, z: 1}

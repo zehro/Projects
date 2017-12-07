@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<library>
+  <!--Melee-->
+  <card name= "Blazing Tanto">
+    <element>Fire</element>
+    <image>Cards/Tanto</image>
+    <type>Tanto</type>
+    <action range= "1" damage= "6" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A fire-element short sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Burning Wakizashi">
+    <element>Fire</element>
+    <image>Cards/Wakisashi</image>
+    <type>Wakizashi</type>
+    <action range= "1" damage= "7" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A fire-element medium sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Fire Katana">
+    <element>Fire</element>
+    <image>Cards/Sword1</image>
+    <type>SwordHori</type>
+    <action range= "1" damage= "9" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A fire-element standard sword that hits the tile in front of you.</description>
+  </card>
+  <card name= "Fiery Curved Blade">
+    <element>Fire</element>
+    <image>Cards/curvedSword</image>
+    <type>SwordHori</type>
+    <action range= "2" damage= "8" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A fire-element sword that hits the tile in front of you and the tile below.</description>
+  </card>
+  <card name= "Flaming Wide Sword">
+    <element>Fire</element>
+    <image>Cards/WideSword</image>
+    <type>WideSword</type>
+    <action range= "3" damage= "7" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <description>A fire-element sword that hits the tile in front of you and the tiles above and below.</description>
+  </card>
+  <card name= "Searing Naginata">
+    <element>Fire</element>
+    <image>Cards/Spear</image>
+    <type>NaginataHori</type>
+    <action range= "2" damage= "9" prefab= "Prefabs/SlashEffect">MeleeVertical</action>
+    <description>A fire-element spear that hits 2 tiles in front of you.</description>
+  </card>
+  <card name= "Enkindled Kanobo">
+    <element>Fire</element>
+    <image>Cards/Kanobo</image>
+    <type>Kanobo</type>
+    <action range= "1" damage= "10" prefab= "Prefabs/SlashStun">MeleeHorizontal</action>
+    <description>A studded, fire-element mace that hits hard and stuns the enemy in front of you.</description>
+  </card>
+
+  <!--Ranged-->
+  <card name= "Single Fire Kunai">
+    <element>Fire</element>
+    <image>Cards/Kunai1</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws a fire-element kunai in front of you.</description>
+  </card>
+  <card name= "Double Fire Kunai">
+    <element>Fire</element>
+    <image>Cards/Kunai2</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws a fire-element kunai in the row front and below you.</description>
+  </card>
+  <card name= "Triple Fire Kunai">
+    <element>Fire</element>
+    <image>Cards/Kunai3</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "2" prefab= "Prefabs/Kunai">Projectile</action>
+    <description>Throws a fire-element kunai in all three rows.</description>
+  </card>
+  <card name= "Single Fire Shuriken">
+    <element>Fire</element>
+    <image>Cards/One Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws a fire-element shuriken in front of you.</description>
+  </card>
+  <card name= "Double Fire Shuriken">
+    <element>Fire</element>
+    <image>Cards/Two Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws a fire-element shuriken in the row front and below you.</description>
+  </card>
+  <card name= "Triple Fire Shuriken">
+    <element>Fire</element>
+    <image>Cards/Three Shuriken</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "4" prefab= "Prefabs/5Star">Projectile</action>
+    <description>Throws a fire-element shuriken in all the rows.</description>
+  </card>
+  <card name= "Single Fire Sai">
+    <element>Fire</element>
+    <image>Cards/Single Sai</image>
+    <type>ThrowLight</type>
+    <action range= "1" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws a fire-element sai dagger in front of you.</description>
+  </card>
+  <card name= "Double Fire Sai">
+    <element>Fire</element>
+    <image>Cards/Double Sai</image>
+    <type>ThrowLight</type>
+    <action range= "2" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws a fire-element sai dagger in the row front and below you.</description>
+  </card>
+  <card name= "Triple Fire Sai">
+    <element>Fire</element>
+    <image>Cards/Triple Sai</image>
+    <type>ThrowLight</type>
+    <action range= "3" damage= "5" prefab= "Prefabs/Sai">Projectile</action>
+    <description>Throws a fire-element sai dagger in all the rows.</description>
+  </card>
+  <card name= "Searing Naginata Throw">
+    <element>Fire</element>
+    <image>Cards/Throwing Spear</image>
+    <type>ThrowMid</type>
+    <action range= "9" damage= "9" prefab= "Prefabs/Spear">SpearAction</action>
+    <description>A fire-element spear thrown at the tiles in front of you, piercing the first enemy and stopping at the second.</description>
+  </card>
+
+  <!--Unique-->
+  <card name= "Ignite Tile">
+    <element>Fire</element>
+    <image>Cards/IgniteTile</image>
+    <type>SwordHori</type>
+    <action range= "1" damage= "3" prefab= "Prefabs/Oil">Oil</action>
+    <description>Ignites the tile in front of you, damaging enemies that step on it.</description>
+  </card>
+  <card name= "Cone of Flames">
+    <element>Fire</element>
+    <image>Cards/IgniteTileCone</image>
+    <type>SwordHori</type>
+    <action range= "2" damage= "3" prefab= "Prefabs/Tetsubishi">Oil</action>
+    <description>Ignites the tiles in cone-fashion, damaging enemies that step on them.</description>
+  </card>
+  <card name= "Line of Fire">
+    <element>Fire</element>
+    <image>Cards/IgniteTileLine</image>
+    <type>SwordHori</type>
+    <action range= "3" damage= "3" prefab= "Prefabs/Tetsubishi">Oil</action>
+    <description>Ignites a line of three tiles, damaging enemies that step on them.</description>
+  </card>
+  <card name= "Fireball">
+    <element>Fire</element>
+    <image>Cards/Fireball</image>
+    <type>ChiAttack</type>
+    <action range= "0" damage= "6" prefab= "Prefabs/Sphere">Fireball</action>
+    <description>A fireball that scorches an enemy in front of you.</description>
+  </card>
+  <card name= "Blazing Fireball">
+    <element>Fire</element>
+    <image>Cards/Fireball</image>
+    <type>ChiAttack</type>
+    <action range= "1" damage= "6" prefab= "Prefabs/Sphere">Fireball</action>
+    <description>A fireball that scorches through 2 enemies.</description>
+  </card>
+  <card name= "Scorching Fireball">
+    <element>Fire</element>
+    <image>Cards/Fireball</image>
+    <type>ChiAttack</type>
+    <action range= "2" damage= "6" prefab= "Prefabs/Sphere">Fireball</action>
+    <description>A fireball that scorches through 3 enemies.</description>
+  </card>
+</library>
